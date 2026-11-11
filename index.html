@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Guía educativa para conocer destinos nacionales de Colombia y aprender a planificar viajes aéreos con información clara y recomendaciones para pasajeros.">
+  <meta name="robots" content="index,follow">
+  <title>Guía de Vuelos Colombia | Información para viajeros</title>
+  <style>
+    :root{--navy:#10243a;--blue:#1769aa;--sky:#eaf4fb;--gold:#f2b544;--ink:#243447;--muted:#627386;--white:#fff;--line:#dce5ec;--bg:#f7fafc}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.65;background:var(--bg)}
+    a{color:var(--blue)} .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+    .nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{font-weight:800;color:var(--navy);font-size:1.15rem;text-decoration:none;letter-spacing:-.3px}
+    .brand span{color:var(--blue)} nav{display:flex;gap:18px;flex-wrap:wrap} nav a{text-decoration:none;color:var(--ink);font-size:.93rem;font-weight:600}
+    nav a:hover{color:var(--blue)} .hero{background:linear-gradient(120deg,#10243a 0%,#1769aa 100%);color:white;padding:78px 0 72px}
+    .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:40px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:1.7px;font-size:.78rem;color:#c7e5fb;font-weight:700}
+    h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.1;margin:14px 0 20px;letter-spacing:-1.5px}
+    .hero p{font-size:1.12rem;color:#e4f1fa;max-width:680px}
+    .hero-card{background:white;color:var(--ink);padding:26px;border-radius:18px;box-shadow:0 18px 45px #071a2b44}
+    .hero-card h2{margin-top:0;color:var(--navy);font-size:1.25rem}
+    .hero-card p{font-size:.95rem;color:var(--muted);margin-bottom:0}
+    .button{display:inline-block;background:var(--gold);color:#172b3c;padding:12px 19px;border-radius:8px;text-decoration:none;font-weight:800;margin-top:12px}
+    section{padding:62px 0} .section-head{max-width:720px;margin-bottom:28px}
+    h2{font-size:2rem;line-height:1.2;color:var(--navy);margin:0 0 12px} h3{color:var(--navy);margin:0 0 8px}
+    .section-head p,.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;border:1px solid var(--line);border-radius:14px;padding:22px}
+    .card p{margin-bottom:0;color:var(--muted)}
+    .tag{display:inline-block;background:var(--sky);color:var(--blue);font-weight:700;font-size:.78rem;padding:5px 9px;border-radius:30px;margin-bottom:12px}
+    .soft{background:#edf4f8}
+    .steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{background:white;border-radius:14px;padding:22px;border:1px solid var(--line)}
+    .step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:34px;height:34px;background:var(--blue);color:white;border-radius:50%;font-weight:800;margin-bottom:14px}
+    .notice{border-left:4px solid var(--gold);background:#fff9ec;padding:17px 20px;border-radius:8px;color:#5e4a22}
+    .faq details{background:white;border:1px solid var(--line);border-radius:10px;padding:17px 19px;margin:10px 0}
+    .faq summary{cursor:pointer;font-weight:700;color:var(--navy)}
+    .faq details p{color:var(--muted);margin-bottom:0}
+    .contact{background:var(--navy);color:white}.contact h2,.contact h3{color:white}.contact p{color:#d9e6ef}
+    .contact-panel{background:#ffffff12;border:1px solid #ffffff30;border-radius:14px;padding:24px}
+    footer{background:#0a1928;color:#c8d5df;padding:30px 0}
+    .footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+    footer a{color:#d7eafa;text-decoration:none;margin-right:14px;font-size:.9rem}
+    .legal{padding:48px 0;background:white;border-top:1px solid var(--line)}
+    .legal article{max-width:850px;margin:0 auto 34px;padding:0 4%}
+    .legal h2{font-size:1.55rem}.legal p,.legal li{color:#536477}
+    .small{font-size:.88rem;color:var(--muted)}
+    @media(max-width:800px){.hero-grid,.grid,.steps{grid-template-columns:1fr 1fr}.hero-grid{gap:24px}}
+    @media(max-width:620px){.nav{padding:14px 0;align-items:flex-start;flex-direction:column}nav{gap:10px 15px}.hero{padding:55px 0}.hero-grid,.grid,.steps{grid-template-columns:1fr}section{padding:46px 0}h2{font-size:1.7rem}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio">Guía de <span>Vuelos Colombia</span></a>
+    <nav aria-label="Navegación principal">
+      <a href="#destinos">Destinos</a><a href="#guias">Guías</a><a href="#recomendaciones">Recomendaciones</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Portal educativo para viajeros</div>
+        <h1>Conoce Colombia y planifica tu próximo viaje</h1>
+        <p>Encuentra orientación general sobre destinos nacionales, preparación de viajes aéreos y aspectos que conviene revisar antes de elegir un tiquete.</p>
+        <a class="button" href="#guias">Explorar guías de viaje</a>
+      </div>
+      <aside class="hero-card">
+        <h2>Viaja con información clara</h2>
+        <p>Consulta recomendaciones prácticas para organizar tu itinerario, revisar las condiciones de transporte y prepararte antes de llegar al aeropuerto.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section id="destinos">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Explora el país</span>
+        <h2>Destinos nacionales de Colombia</h2>
+        <p>Colombia reúne ciudades, regiones y paisajes diversos. Estos breves perfiles son un punto de partida para investigar qué ofrece cada lugar y organizar una visita.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Bogotá</h3><p>La capital ofrece museos, centros culturales, gastronomía y acceso a diferentes experiencias de la región Andina.</p></article>
+        <article class="card"><h3>Medellín</h3><p>Conoce sus espacios culturales, barrios tradicionales, parques y opciones de recorridos urbanos.</p></article>
+        <article class="card"><h3>Cali</h3><p>Una ciudad reconocida por su cultura musical, su gastronomía y sus actividades artísticas.</p></article>
+        <article class="card"><h3>Cartagena</h3><p>Explora su patrimonio histórico, arquitectura, espacios culturales y entorno del Caribe colombiano.</p></article>
+        <article class="card"><h3>Barranquilla</h3><p>Descubre su identidad cultural, agenda de eventos, gastronomía y cercanía con el litoral Caribe.</p></article>
+        <article class="card"><h3>Santa Marta</h3><p>Un destino para conocer historia, playas y atractivos naturales de la región Caribe.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="guias">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Aprende antes de viajar</span>
+        <h2>Guías básicas para pasajeros</h2>
+        <p>La información de cada viaje puede variar según la empresa transportadora, la ruta, el aeropuerto y la tarifa elegida. Confirma siempre los detalles en los canales oficiales correspondientes.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Antes de elegir un tiquete</h3><p>Compara horarios, aeropuertos, condiciones de cambios, restricciones, servicios incluidos y reglas de equipaje. Lee el resumen de compra antes de confirmar cualquier operación.</p></article>
+        <article class="card"><h3>Documentos y registro</h3><p>Verifica con anticipación los documentos aceptados para tu trayecto y los tiempos recomendados para realizar el proceso de registro y llegar a la sala de abordaje.</p></article>
+        <article class="card"><h3>Equipaje</h3><p>Consulta las dimensiones, el peso permitido y los artículos sujetos a restricciones directamente con la empresa que opera tu vuelo.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="recomendaciones">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="tag">Planificación</span>
+        <h2>Cómo organizar un viaje aéreo</h2>
+        <p>Una lista sencilla puede ayudarte a revisar los puntos importantes sin dejar decisiones para el último momento.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><h3>Define tu itinerario</h3><p>Establece fechas, destino, duración de la visita y necesidades de movilidad.</p></article>
+        <article class="step"><h3>Revisa las condiciones</h3><p>Consulta directamente con el proveedor los horarios, equipaje, servicios y condiciones aplicables a la tarifa.</p></article>
+        <article class="step"><h3>Confirma la información</h3><p>Antes de salir, revisa el estado del vuelo y las indicaciones actualizadas del aeropuerto y de la empresa transportadora.</p></article>
+      </div>
+      <div class="notice" style="margin-top:24px"><strong>Importante:</strong> este portal no consulta inventarios, no confirma disponibilidad, no procesa pagos y no emite tiquetes. La información específica de cada servicio debe verificarse con el proveedor correspondiente.</div>
+    </div>
+  </section>
+
+  <section class="soft faq" id="preguntas">
+    <div class="wrap">
+      <div class="section-head"><span class="tag">Centro de ayuda</span><h2>Preguntas frecuentes</h2><p>Respuestas generales para orientar la preparación de un viaje nacional.</p></div>
+      <details><summary>¿Este sitio vende o reserva tiquetes?</summary><p>No. Este portal tiene un propósito exclusivamente educativo e informativo. No vende, reserva ni emite tiquetes y no recibe pagos por servicios de transporte.</p></details>
+      <details><summary>¿Dónde puedo confirmar horarios y tarifas?</summary><p>Debes consultar directamente los canales oficiales de la empresa transportadora que opera el trayecto. Los horarios, tarifas y condiciones pueden cambiar.</p></details>
+      <details><summary>¿Qué equipaje puedo llevar?</summary><p>Las condiciones dependen de la empresa, la ruta y la tarifa. Revisa las dimensiones, el peso y los artículos restringidos antes de preparar tu equipaje.</p></details>
+      <details><summary>¿La información garantiza las condiciones de un viaje?</summary><p>No. El contenido es orientativo y puede cambiar. La información contractual y operativa válida es la que confirme el proveedor del transporte para cada servicio.</p></details>
+      <details><summary>¿Cómo puedo contactar al portal?</summary><p>Puedes utilizar el único canal de contacto publicado en la sección Contacto para consultas relacionadas con el contenido de este sitio.</p></details>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div class="wrap">
+      <div class="section-head"><span class="eyebrow">Comunicación</span><h2>Contacto del portal</h2><p>Este canal está destinado exclusivamente a comentarios, correcciones y consultas editoriales sobre el contenido informativo.</p></div>
+      <div class="contact-panel">
+        <h3>Canal único de contacto</h3>
+        <!-- Reemplaza este correo por una dirección real que controles. -->
+        <p>Correo electrónico: <a href="mailto:contacto@tudominio.com">contacto@tudominio.com</a></p>
+        <p class="small" style="color:#d9e6ef">Sustituye el correo de ejemplo por una dirección activa antes de publicar el sitio.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal" id="legal">
+    <article id="terminos">
+      <h2>Términos y condiciones de uso</h2>
+      <p><strong>Última actualización:</strong> [indicar fecha de publicación].</p>
+      <p>Bienvenido a Guía de Vuelos Colombia. El acceso y uso de este sitio implica la lectura de estos términos. Si no estás de acuerdo con ellos, te recomendamos no utilizar el portal.</p>
+      <p><strong>Finalidad del portal.</strong> Este sitio publica contenido educativo e informativo sobre destinos nacionales, preparación de viajes aéreos y recomendaciones generales para pasajeros. No es una aerolínea, agencia de viajes, operador turístico, intermediario de transporte ni entidad gubernamental.</p>
+      <p><strong>Sin contratación de servicios.</strong> El portal no comercializa, reserva, emite ni modifica tiquetes; tampoco recibe pagos, confirma cupos o garantiza tarifas, itinerarios, horarios o disponibilidad. Cualquier contratación debe realizarse directamente con el proveedor correspondiente, bajo sus propios términos.</p>
+      <p><strong>Exactitud y actualización.</strong> Se procura mantener el contenido claro y actualizado, pero la información puede cambiar o contener imprecisiones. El usuario debe verificar datos operativos, requisitos y condiciones con las fuentes oficiales antes de tomar decisiones.</p>
+      <p><strong>Uso adecuado.</strong> El usuario se compromete a utilizar el portal de forma lícita, respetuosa y sin afectar su funcionamiento ni los derechos de terceros.</p>
+      <p><strong>Propiedad intelectual.</strong> Los textos, diseño y elementos propios del portal están protegidos por las normas aplicables. Las marcas y nombres de terceros pertenecen a sus respectivos titulares y se mencionan únicamente con fines informativos.</p>
+      <p><strong>Enlaces externos.</strong> Los enlaces a sitios de terceros se ofrecen como referencia. Este portal no controla sus contenidos, disponibilidad, políticas ni servicios.</p>
+      <p><strong>Modificaciones.</strong> Estos términos pueden actualizarse cuando sea necesario. La versión vigente estará publicada en esta página con su fecha de actualización.</p>
+      <p><strong>Legislación aplicable.</strong> El uso del sitio se rige por las normas aplicables de la República de Colombia, sin perjuicio de las disposiciones imperativas que correspondan.</p>
+    </article>
+
+    <article id="privacidad">
+      <h2>Política de privacidad y tratamiento de datos</h2>
+      <p><strong>Última actualización:</strong> [indicar fecha de publicación].</p>
+      <p>Esta política explica el tratamiento que puede darse a los datos personales cuando una persona se comunica con el portal. Antes de publicar, completa la identidad y los datos de contacto del responsable del tratamiento que correspondan legalmente.</p>
+      <p><strong>Responsable del tratamiento.</strong> Responsable: [nombre de la persona natural o entidad responsable]. Contacto para asuntos de datos personales: [correo de privacidad]. No publiques esta política con campos pendientes ni atribuyas el tratamiento a una persona o entidad que no lo realice.</p>
+      <p><strong>Datos que podrían recibirse.</strong> Si una persona escribe voluntariamente, el portal podrá recibir los datos incluidos en su mensaje, como nombre, dirección de correo y contenido de la consulta. No solicites datos sensibles ni información financiera que no sea necesaria.</p>
+      <p><strong>Finalidades.</strong> Los datos se utilizarán para responder consultas editoriales, gestionar solicitudes relacionadas con el sitio, mantener la seguridad y cumplir obligaciones legales aplicables. No se deben usar para finalidades incompatibles sin la autorización o base jurídica correspondiente.</p>
+      <p><strong>Derechos de los titulares.</strong> De acuerdo con la normativa colombiana aplicable, los titulares pueden solicitar acceso, actualización, rectificación o supresión de sus datos, y presentar consultas o reclamos por el canal de contacto indicado por el responsable.</p>
+      <p><strong>Seguridad y conservación.</strong> Se adoptarán medidas razonables para proteger los datos y conservarlos solo durante el tiempo necesario para las finalidades informadas o los plazos legales aplicables.</p>
+      <p><strong>Cookies y tecnologías similares.</strong> El sitio puede utilizar cookies técnicas necesarias para su funcionamiento. Si se incorporan herramientas de analítica o publicidad, esta política deberá actualizarse para explicar qué tecnologías se usan, sus finalidades y las opciones disponibles para el usuario.</p>
+      <p><strong>Contacto.</strong> Para ejercer derechos o formular consultas sobre privacidad, utiliza: [correo de privacidad]. Esta política debe ajustarse a la operación real del sitio y a la Ley 1581 de 2012 y sus normas reglamentarias cuando resulten aplicables.</p>
+    </article>
+
+    <article id="aviso">
+      <h2>Aviso de independencia y descargo de responsabilidad</h2>
+      <p>Guía de Vuelos Colombia es un portal independiente de carácter educativo e informativo. No está afiliado, patrocinado ni autorizado por aerolíneas, aeropuertos, agencias de viajes ni entidades públicas, salvo que se indique expresamente y exista autorización verificable.</p>
+      <p>Los nombres de ciudades, empresas, marcas y servicios de terceros se utilizan, cuando corresponde, únicamente para identificar información de interés. Sus titulares conservan todos los derechos sobre dichos signos.</p>
+      <p>El contenido no constituye una oferta comercial, cotización, asesoría contractual ni confirmación de un servicio de transporte. Las condiciones definitivas deben consultarse con el proveedor correspondiente.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div><strong>Guía de Vuelos Colombia</strong><br><span class="small" style="color:#c8d5df">Portal educativo e independiente para viajeros.</span></div>
+    <div><a href="#terminos">Términos y condiciones</a><a href="#privacidad">Privacidad</a><a href="#aviso">Aviso legal</a><a href="#contacto">Contacto</a></div>
+    <div class="small" style="color:#c8d5df">© <span id="year"></span> Guía de Vuelos Colombia.</div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
