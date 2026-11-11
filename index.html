@@ -47,6 +47,9 @@
     .legal article{max-width:850px;margin:0 auto 34px;padding:0 4%}
     .legal h2{font-size:1.55rem}.legal p,.legal li{color:#536477}
     .small{font-size:.88rem;color:var(--muted)}
+
+    .language-switch{display:inline-block;border:1px solid var(--line);border-radius:7px;padding:7px 11px;text-decoration:none;font-weight:700;font-size:.88rem;color:var(--blue);white-space:nowrap}
+    .language-switch:hover{background:var(--sky)}
     @media(max-width:800px){.hero-grid,.grid,.steps{grid-template-columns:1fr 1fr}.hero-grid{gap:24px}}
     @media(max-width:620px){.nav{padding:14px 0;align-items:flex-start;flex-direction:column}nav{gap:10px 15px}.hero{padding:55px 0}.hero-grid,.grid,.steps{grid-template-columns:1fr}section{padding:46px 0}h2{font-size:1.7rem}}
   </style>
@@ -57,6 +60,7 @@
     <a class="brand" href="#inicio">Guía de <span>Vuelos Colombia</span></a>
     <nav aria-label="Navegación principal">
       <a href="#destinos">Destinos</a><a href="#guias">Guías</a><a href="#recomendaciones">Recomendaciones</a><a href="#preguntas">Preguntas</a><a href="#contacto">Contacto</a>
+    <a class="language-switch" href="inglesa.html" lang="en" aria-label="View this website in English">English</a>
     </nav>
   </div>
 </header>
@@ -189,10 +193,44 @@
 <footer>
   <div class="wrap footer-grid">
     <div><strong>Guía de Vuelos Colombia</strong><br><span class="small" style="color:#c8d5df">Portal educativo e independiente para viajeros.</span></div>
-    <div><a href="#terminos">Términos y condiciones</a><a href="#privacidad">Privacidad</a><a href="#aviso">Aviso legal</a><a href="#contacto">Contacto</a></div>
+    <div><a href="#terminos">Términos y condiciones</a><a href="#privacidad">Privacidad</a><a href="#aviso">Aviso legal</a><a href="#contacto">Contacto</a>
+    <a class="language-switch" href="inglesa.html" lang="en" aria-label="View this website in English">English</a></div>
     <div class="small" style="color:#c8d5df">© <span id="year"></span> Guía de Vuelos Colombia.</div>
   </div>
 </footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+
+<script>
+/*
+  Automatic language preference:
+  Visitors whose public IP is detected in the United States are sent to inglesa.html.
+  If the location service is unavailable, the Spanish page remains available.
+  The visitor can always switch languages using the link in the navigation.
+*/
+(function () {
+  try {
+    var alreadyChecked = sessionStorage.getItem("languageRedirectChecked");
+    if (alreadyChecked) return;
+    sessionStorage.setItem("languageRedirectChecked", "1");
+
+    fetch("https://ipapi.co/json/", { method: "GET", cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) throw new Error("Location lookup unavailable");
+        return response.json();
+      })
+      .then(function (location) {
+        if (location && location.country_code === "US") {
+          window.location.replace("inglesa.html");
+        }
+      })
+      .catch(function () {
+        // Keep the Spanish page accessible if IP lookup fails.
+      });
+  } catch (error) {
+    // Some browsers restrict storage or network access; keep Spanish as fallback.
+  }
+})();
+</script>
+
 </body>
 </html>
